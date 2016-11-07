@@ -4,23 +4,23 @@ packages.
 # Installation
 
 ```
-go get honnef.co/go/cmd/rdeps
+go get github.com/dominikh/go-rdeps
 ```
 
 # Usage
 
-Invoke `rdeps` with zero or more arguments that are Go packages to
+Invoke `go-rdeps` with zero or more arguments that are Go packages to
 print their reverse dependencies.
 
 Alternatively, use the `-stdin` flag and provide a list of Go packages
 on standard input.
 
-See `rdeps -h` for all flags.
+See `go-rdeps -h` for all flags.
 
 # Example
 
 ```
-$ rdeps database/sql 2>/dev/null | head -5
+$ go-rdeps database/sql 2>/dev/null | head -5
 github.com/GoogleCloudPlatform/golang-samples/docs/appengine/cloudsql
 github.com/lxc/lxd/lxd
 github.com/mattn/go-sqlite3/sqltest
